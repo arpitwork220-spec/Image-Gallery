@@ -1,38 +1,51 @@
-import { type User, type InsertUser } from "@shared/schema";
-import { randomUUID } from "crypto";
-
-// modify the interface with any CRUD methods
-// you might need
+import { menuItems, type MenuItem, type InsertMenuItem } from "@shared/schema";
+import { db } from "./db";
 
 export interface IStorage {
-  getUser(id: string): Promise<User | undefined>;
-  getUserByUsername(username: string): Promise<User | undefined>;
-  createUser(user: InsertUser): Promise<User>;
+  getMenuItems(): Promise<MenuItem[]>;
+  seedMenuItems(): Promise<void>;
 }
 
-export class MemStorage implements IStorage {
-  private users: Map<string, User>;
-
-  constructor() {
-    this.users = new Map();
+export class DatabaseStorage implements IStorage {
+  async getMenuItems(): Promise<MenuItem[]> {
+    return await db.select().from(menuItems);
   }
 
-  async getUser(id: string): Promise<User | undefined> {
-    return this.users.get(id);
-  }
-
-  async getUserByUsername(username: string): Promise<User | undefined> {
-    return Array.from(this.users.values()).find(
-      (user) => user.username === username,
-    );
-  }
-
-  async createUser(insertUser: InsertUser): Promise<User> {
-    const id = randomUUID();
-    const user: User = { ...insertUser, id };
-    this.users.set(id, user);
-    return user;
+  async seedMenuItems(): Promise<void> {
+    const items: InsertMenuItem[] = [
+      {
+        name: "Morning Sunshine",
+        category: "Juice",
+        description: "Fresh orange and carrot blend for a morning boost.",
+        imageUrl: "juice_orange" 
+      },
+      {
+        name: "Red Vitality",
+        category: "Juice",
+        description: "Beetroot and pomegranate mix for blood health.",
+        imageUrl: "juice_red"
+      },
+      {
+        name: "Green Detox",
+        category: "Juice",
+        description: "Spinach, cucumber, and lemon cleanse.",
+        imageUrl: "juice_green" // Mapping to a generic green one if specific not found
+      },
+      {
+        name: "Kiwi Power Bowl",
+        category: "Bowl",
+        description: "Kiwi, orange, and pineapple chunks.",
+        imageUrl: "bowl_kiwi"
+      },
+      {
+        name: "Acai Delight",
+        category: "Bowl",
+        description: "Acai berry base with nuts and seeds.",
+        imageUrl: "bowl_acai"
+      }
+    ];
+    await db.insert(menuItems).values(items);
   }
 }
 
-export const storage = new MemStorage();
+export const storage = new DatabaseStorage();
