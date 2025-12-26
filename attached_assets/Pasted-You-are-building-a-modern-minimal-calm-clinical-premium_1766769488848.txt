@@ -1,0 +1,258 @@
+You are building a modern, minimal, calm, clinical, premium website for a daily nutrition brand called Zestara.
+
+BRAND CONTEXT
+
+Zestara is a daily food & beverage brand focused on building a daily nutrition ritual for individuals.
+It is not a food delivery app, not a diet brand, and not a marketplace.
+
+Primary outcomes Zestara supports:
+
+Hairfall reduction
+
+Weight loss
+
+Overall daily nutrition consistency
+
+The brand tone is:
+
+Minimal
+
+Calm
+
+Clinical & structured
+
+Premium, confident, trustworthy
+
+Human-curated, not tech-hyped
+
+PRIMARY USER
+
+Busy urban working professionals (22–40) who:
+
+Know health matters
+
+Are tired of thinking about what to eat daily
+
+Want a system that is handled for them
+
+PRIMARY CTA
+
+Text: “Start my 30-day plan”
+Action: Opens WhatsApp chat to +91 9660254489
+Prefilled message:
+“Hi Zestara, I want to start my 30-day personalised nutrition plan.”
+
+This CTA should appear:
+
+In the hero section
+
+At the end of major sections
+
+In the header (subtle, not loud)
+
+DESIGN SYSTEM (STRICT — DO NOT IMPROVISE)
+COLOR PALETTE (USE ONLY THESE OR VERY CLOSE SHADES)
+
+Primary Green: #234E3A (headings, CTAs, icons)
+
+Background Cream: #FBF6E8 (main background)
+
+Muted Green: #7FAF8D (secondary accents only)
+
+Text Charcoal: #1F1F1F
+
+🚫 Do NOT use:
+
+Bright colors
+
+Gradients
+
+Pure white or pure black
+
+Fruit colors as UI accents
+
+Fruit colors are allowed only inside images, never in UI elements.
+
+TYPOGRAPHY
+
+Use a clean, modern sans-serif (Inter, SF Pro, or similar)
+
+Large headings
+
+Generous line spacing
+
+Clear hierarchy
+
+No decorative fonts
+
+LAYOUT RULES
+
+Light mode only
+
+Plenty of whitespace
+
+Soft rounded corners
+
+Minimal shadows (very subtle)
+
+No clutter
+
+No sliders or carousels
+
+No animations that distract
+
+IMAGE USAGE RULES
+
+Use only high-quality, studio-style images for:
+
+Homepage hero
+
+Section headers
+
+Use real/raw images only inside:
+
+“How It Works”
+
+“About” (as proof of freshness)
+
+Never overload sections with images.
+Images should support clarity, not steal attention.
+
+WEBSITE STRUCTURE (MANDATORY)
+1. HOME
+
+Purpose: Decision page
+
+Hero section:
+
+One calm, studio-quality product image
+
+Headline (very short):
+“A daily nutrition ritual, built around your goal.”
+
+Subline:
+“Fresh meals and juices planned for you, delivered daily.”
+
+Primary CTA button
+
+Sections:
+
+Why daily nutrition matters
+
+The three outcomes (hair, weight, nutrition)
+
+How it works (3 steps)
+
+Why Zestara is different
+
+CTA repeat
+
+2. HOW IT WORKS
+
+Explain the current human-curated model clearly.
+
+Steps:
+
+You choose your goal
+
+We design a 30-day plan with you
+
+Fresh meals & juices delivered daily
+
+Skip a day anytime by informing 6 hours before
+
+Make the manual process feel intentional and premium, not temporary.
+
+3. SUBSCRIPTION
+
+Do NOT show pricing.
+
+Explain:
+
+What the 30-day plan includes
+
+What changes daily
+
+What stays consistent
+
+Flexibility of skipping days
+
+Why consistency matters more than choice
+
+End with CTA.
+
+4. PERSONALISATION
+
+Explain:
+
+Goal-based planning (hairfall, weight loss, nutrition)
+
+Plans are curated by humans
+
+No generic “one diet fits all”
+
+Built for habit formation, not quick fixes
+
+No technical jargon. No AI claims.
+
+5. MENU (SECONDARY PAGE)
+
+Purpose: Reassurance only.
+
+Show categories (bowls, smoothies, juices)
+
+No full price lists
+
+No exhaustive SKU dumps
+
+Use representative images only
+
+6. ABOUT ZESTARA
+
+Explain:
+
+Why Zestara exists
+
+The problem with modern eating
+
+Founder-led vision of daily wellness
+
+Calm, honest tone
+
+7. CORPORATE (SECONDARY / FUTURE)
+
+Short page explaining:
+
+Office nutrition combos
+
+Productivity & consistency benefits
+
+“Corporate pilots coming soon”
+
+Do not push this heavily.
+
+TECHNICAL NOTES
+
+Mobile-first design
+
+Fast loading
+
+Accessible contrast
+
+Clean semantic HTML
+
+Simple structure (easy to iterate later)
+
+FINAL RULES
+
+This website should feel like relief, not excitement
+
+Users should feel: “Finally, someone has thought this through.”
+
+Do not upsell.
+
+Do not shout.
+
+Let clarity do the work.
+
+
